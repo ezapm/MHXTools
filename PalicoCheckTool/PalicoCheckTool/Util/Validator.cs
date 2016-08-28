@@ -25,7 +25,7 @@ namespace PalicoCheckTool
             if (forte != 0 && !(actions[1] == Constants.LegalPalicoSecondaryActions[forte * 2] || actions[1] == Constants.LegalPalicoSecondaryActions[(forte * 2) + 1]))
                 return false;
 
-            if (forte != 0 && actions[2] != 9 && actions[3] != 1)
+            if (forte != 0 && (actions[2] != 9 || actions[3] != 1))
                 return false;
             else if (forte == 0 && actions[1] != 9 && actions[2] != 1)
                 return false;
